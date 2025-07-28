@@ -39,5 +39,5 @@ FROM department
 JOIN courses  ON department.department_id = courses.department_id
 GROUP BY department.department_id, department.department_name
 HAVING COUNT(*) >= 2;
-
+GRANT select on courses to RohitKhola
 
